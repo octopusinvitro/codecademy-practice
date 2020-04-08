@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/img/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/favicon.ico" />
+  <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+
+  <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/prism.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+</head>
+
+<body>
+  <article>
+
+    <header>
+      <nav>
+        <a href="{{ site.baseurl }}">Home</a>
+        <a href="https://github.com/octopusinvitro/codecademy-practice">Repository</a>
+      </nav>
+      <h1>Codecademy Practice</h1>
+    </header>
+
+    <main>
+      <h2>{{ page.title }}</h2>
+{{ content }}
+    </main>
+
+    <footer>
+      <div>
+        <h4>Codecademy Practice</h4>
+        <p>This repo contains exercises and challenges to practice the lessons learned in the Javascript and Ruby courses at Codecademy.</p>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <p>Twitter: <br><a href="https://twitter.com/{{ site.twitter_username }}">&commat;{{ site.twitter_username }}</a></p>
+        <p>GitHub: <br><a href="https://github.com/{{ site.github_username }}">&commat;{{ site.github_username }}</a></p>
+      </div>
+
+      <div>
+        <h5>Created by</h5>
+        <p>Octopus in Vitro, 2020</p>
+        <p>Forever WIP</p>
+      </div>
+    </footer>
+
+  </article>
+
+  <script src="{{ site.baseurl }}/assets/js/prism.js"></script>
+</body>
+</html>

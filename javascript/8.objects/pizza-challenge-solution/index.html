@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza challenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <label for="people">How many people?</label>
+      <input type="number" id="people" name="people" class="people" min="1" placeholder="4">
+    </div>
+
+    <div>
+      <label for="pizzas">How many pizzas do you have?</label>
+      <input type="number" id="pizzas" name="pizzas" class="pizzas" min="0" placeholder="2">
+    </div>
+
+    <button id="calculate" class="calculate">Calculate!</button>
+
+    <div id="division">
+      <!-- RESULT:
+      <p>8 people with 2 pizzas.</p>
+      <p>Each person gets 2 pieces of pizza.</p>
+      <p>There are 0 leftover pieces.</p> -->
+    </div>
+  </div>
+
+  <script  src="script.js"></script>
+</body>
+</html>
