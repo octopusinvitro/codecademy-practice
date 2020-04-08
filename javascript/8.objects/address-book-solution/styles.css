@@ -1,0 +1,139 @@
+/*
+#f2f2f2 blanco
+#dedfe2 blanco oscuro
+#4b505c azul
+#a7b2c5 gris
+#7d8390 gris oscuro
+#fb4633 red
+*/
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #4b505c;
+  background: #e6e9e8;
+  background-image: linear-gradient(to bottom right, #e6e9e8, #dddfe1);
+  background-size: contain;
+}
+
+.container {
+  max-width: 70em;
+  margin: 2em auto;
+  padding: 12em;
+  background: #f2f2f2;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .1);
+}
+
+h1 {
+  margin: 0;
+  padding: 2em 0;
+  text-transform: uppercase;
+  background: transparent url(images/paint.svg) no-repeat right center;
+  background-size: contain;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 8em;
+}
+
+.actions div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 12em;
+  margin-right: 3em;
+}
+
+.error-message {
+  height: 2em;
+  padding: 2em 0;
+  color: #fb4633;
+}
+
+.actions img {
+  margin: 1em auto;
+}
+
+input {
+  max-width: 9em;
+  margin: 1em auto;
+  padding: .5em 1em;
+  color: #4b505c;
+  background-color: #dedfe2;
+  border: 0;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  color: #7d8390;
+}
+
+.explanation {
+  color: #a7b2c5;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px dashed #4b505c;
+}
+
+th {
+  padding: 1em 2em 1em 3.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  background: transparent no-repeat left 2em center;
+  background-size: 1em;
+  cursor: pointer;
+}
+
+.sort-desc {
+  background-image: url(images/desc.svg);
+}
+
+.sort-asc {
+  background-image: url(images/asc.svg);
+}
+
+td {
+  padding: 1em 2em;
+}
+
+a {
+  color: #a7b2c5;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  width: auto;
+  margin: 0 auto;
+  padding: .5em 3em .5em 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #4b505c;
+  background: #a7b2c5 url(images/desc.svg) no-repeat right 1em center;
+  background-size: 1em;
+  outline: 0;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #dedfe2;
+  background-color: #7d8390;
+}

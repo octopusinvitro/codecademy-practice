@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Address Book</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Address Book</h1>
+
+    <div class="actions">
+      <div>
+        <img src="images/search.svg" width="50" height="50" alt="Search icon, a map and a magnifying glass">
+        <label for="query">Search in contacts database</label>
+        <p class="explanation">(Fuzzy search by any field)</p>
+        <input id="query" name="query" type="text" autocomplete="on" placeholder="Search...">
+      </div>
+
+      <div>
+        <img src="images/delete.svg" width="50" height="50" alt="Delete icon, two swords crossed">
+        <label for="fullname">Delete contact from database</label>
+        <p class="explanation">(Exact contact name match)</p>
+        <input id="fullname" name="fullname" type="text" autocomplete="on" placeholder="Contact name...">
+      </div>
+    </div>
+
+    <div class="error-message" id="error-message"></div>
+
+    <table>
+
+      <thead>
+        <tr id="header-row">
+          <th class="sort-asc">Name</th>
+          <th class="sort-asc">Email</th>
+          <th class="sort-asc">Phone</th>
+          <th class="sort-asc">City</th>
+        </tr>
+      </thead>
+
+      <tbody id="contacts">
+        <tr>
+          <td>Kato Hopkins</td>
+          <td><a href="mailto:Aliquam.erat@in.org">Aliquam.erat@in.org</a></td>
+          <td>1-389-121-0465</td>
+          <td>Tongrinne</td>
+        </tr>
+        <tr>
+          <td>Tiger Booker</td>
+          <td><a href="mailto:tincidunt@estconguea.ca">tincidunt@estconguea.ca</a></td>
+          <td>1-579-717-6605</td>
+          <td>Brandon</td>
+        </tr>
+        <tr>
+          <td>Orson Meadows</td>
+          <td><a href="mailto:dui.Suspendisse@elitdictum.com">dui.Suspendisse@elitdictum.com</a></td>
+          <td>875-6841</td>
+          <td>Laakirchen</td>
+        </tr>
+        <tr>
+          <td>Christine Guerra</td>
+          <td><a href="mailto:feugiat.metus@egestasa.net">feugiat.metus@egestasa.net</a></td>
+          <td>489-9233</td>
+          <td>Bhimavaram</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+  <script src="delete.js"></script>
+  <script src="search.js"></script>
+  <script src="sort.js"></script>
+</body>
+</html>

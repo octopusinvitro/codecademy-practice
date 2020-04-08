@@ -1,0 +1,24 @@
+# Use: {{ site.title }}, {{ site.email }}
+title: Codecademy Practice
+email: octopusinvitro@users.noreply.github.com
+description: >-
+  This repo contains exercises and challenges to practice the
+  JavaScript lessons learned in [the Javascript course at
+  Codecademy].
+baseurl: "/codecademy-practice"
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter_username: octopusinvitro
+github_username:  octopusinvitro
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  syntax_highlighter_opts:
+    disable : true
+highlighter: null
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - 14.requests/whos-in-space-solution/node_modules
