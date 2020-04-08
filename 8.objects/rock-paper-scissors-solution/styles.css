@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5em;
+  background-color: #49b971;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+label,
+.robot div {
+  text-transform: uppercase;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'human robot'
+    'result result';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem 1fr 6rem;
+
+  min-height: 90vh;
+  margin: 3em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  grid-area: header;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  color: #333;
+  background-color: #d2dae2;
+}
+
+.human {
+  grid-area: human;
+
+  padding: 1.5em 3em;
+  color: #333;
+  background-color: #fff;
+}
+
+.robot {
+  grid-area: robot;
+
+  padding: 1.5em 3em;
+  color: #fff;
+  background-color: #333;
+}
+
+.result {
+  grid-area: result;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2em;
+  color: #333;
+  background-color: #d2dae2;
+}
+
+.play-button {
+  margin-top: 2em;
+  padding: 1em 2em;
+
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #49b971;
+  outline: 0;
+  border: 0;
+  border-radius: 5em;
+}
+
+#computer-scissors {
+  margin-bottom: 4em;
+}
+
+.selected {
+  padding: 0 0.5em;
+  font-weight: bold;
+  background-color: #49b971;
+  border-radius: 5em;
+}
+
+.floating-player {
+   width: 320px;
+   height: 400px;
+   margin: auto;
+   text-align: center;
+}
+
+.floating-player img,
+.floating-player figcaption {
+  display: block;
+  margin: auto;
+}
+
+.floating-player img {
+  animation: float 3s ease-out infinite;
+}
+
+.floating-player figcaption {
+  display: block;
+  width: 60%;
+  height: 2em;
+  margin: 2em 0 0 3em;
+  color: transparent;
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  animation: shadow 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 1.25em);
+  }
+}
+
+@keyframes shadow {
+  50% {
+    width: 70%;
+    height: 2.5em;
+    margin-left: 2em;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

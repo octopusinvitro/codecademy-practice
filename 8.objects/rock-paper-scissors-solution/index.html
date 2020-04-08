@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="title">Rock, Paper, Scissors</h1>
+
+    <div class="human">
+      <h2>Choose a gesture!</h2>
+      <div>
+        <input type="radio" name="gesture" id="rock" value="rock">
+        <label for="rock">Rock</label>
+      </div>
+      <div>
+        <input type="radio" name="gesture" id="paper" value="paper">
+        <label for="paper">Paper</label>
+      </div>
+      <div>
+        <input type="radio" name="gesture" id="scissors" value="scissors">
+        <label for="scissors">Scissors</label>
+      </div>
+      <button id="play" class="play-button">PLAY</button>
+
+      <figure class="floating-player">
+        <img id="human" src="images/human.png" width="320" height="320" alt="human player floating">
+        <figcaption>Human player</figcaption>
+      </figure>
+    </div>
+
+    <div class="robot">
+      <h2>Computer's gesture:</h2>
+
+      <div id="computer-rock">Rock</div>
+      <div id="computer-paper">Paper</div>
+      <div id="computer-scissors">Scissors</div>
+
+      <figure class="floating-player">
+        <img id="robot" src="images/robot.png" width="320" height="320" alt="robot player floating">
+        <figcaption>Robot player</figcaption>
+      </figure>
+    </div>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
